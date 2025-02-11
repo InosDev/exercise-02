@@ -1,20 +1,21 @@
 
 <?php
 
-$arr = [10, 5];
+$stdin = fopen("php://stdin", "r");
+$N1 = fgets($stdin);
+$N2 = fgets($stdin);
+fclose($stdin);
 
-$stdin = fopen('php://stdin', $arr[0], $arr[1]);
+if (is_numeric($N1) && is_numeric($N2)) {
 
-if (is_numeric($arr[0]) && is_numeric($arr[1])) {
-
-    if ($arr[1] = 0 ){
+    if ($N2 = 0 ){
 
         fscanf(STDERR, "%d\n", "Делить на 0 нельзя");
         
     } else { 
     	
 
-        $quotient = $arr[0] / $arr[1];
+        $quotient = $N1 / $N2;
 
         fwrite($stdout, $quotient);
     }
