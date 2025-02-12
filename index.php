@@ -8,9 +8,9 @@ fclose($stdin);
 
 if (is_numeric($N1) && is_numeric($N2)) {
 
-    if ($N2 = 0 ){
+    if ($N2 === 0 ){
 
-        fscanf(STDERR, "%d\n", "Делить на 0 нельзя");
+        echo "Делить на 0 нельзя";
         
     } else { 
     	
@@ -21,5 +21,5 @@ if (is_numeric($N1) && is_numeric($N2)) {
     }
 
 } else {
-    fscanf(STDERR, "%d\n", "Введите, пожалуйста, число");
+    echo "Введите, пожалуйста, число";
 }
