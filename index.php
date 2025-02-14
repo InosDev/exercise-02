@@ -8,15 +8,12 @@ fclose($stdin);
 if (is_numeric($N1) && is_numeric($N2)) {
 
     if ($N1 == 0 || $N2 == 0){
-
-        echo "Делить на 0 нельзя";
-        
+        echo "Делить на 0 нельзя";      
     } else { 
-    	
 
         $quotient = $N1 / $N2;
-
         echo $quotient;
+        
     }
 
 } else {
