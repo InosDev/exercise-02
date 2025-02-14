@@ -1,17 +1,13 @@
 <?php
 
-
 $stdin = fopen("php://stdin", "r");
 $N1 = fgets($stdin);
 $N2 = fgets($stdin);
 fclose($stdin);
 
-$N1 = 10;
-$N2 = 5;
-
 if (is_numeric($N1) && is_numeric($N2)) {
 
-    if ($N2 === 0 ){
+    if ($N1 == 0 || $N2 == 0){
 
         echo "Делить на 0 нельзя";
         
